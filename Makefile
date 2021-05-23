@@ -1,6 +1,6 @@
 %:
 	@echo "\033[0;33mbuilding $@.c"
-	@gcc -o $@ $@.c
+	@gcc -o $@ $@.c -lm
 	@echo "building successful $@"
 	@echo "running $@\n\033[1;37m"
 	@./$@
